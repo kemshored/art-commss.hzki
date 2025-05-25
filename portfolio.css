@@ -1,18 +1,32 @@
- h7{
+ 
+
+p.welcome-message {
     color: rgb(232, 1, 182);
     font-size: 3rem;
     background-color: rgb(255, 235, 254);
     border-radius: 12px;
-    border-style: double;
-    box-shadow: 5px 0 0px 2px rgba(0,0,0,0.1);
-    width: 120px;
-    justify-content: center;
-    align-items: center;
-
+    border: double;
+    box-shadow: 5px 0 0px 2px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* Adjust width to fit content */
+    margin: 1rem auto; /* Center the heading */
+    padding: 0.5rem 1rem; /* Add some padding */
+    text-align: center; /* Center text */
 }
 
 img{
     justify-content: center;
-    width: 400px;
+    width: 120vh;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+ box-shadow: 0 8px 18px rgba(252, 0, 159, 0.15);
+ transition: transform 0.3s ease;   /* Smooth transform on hover */
+    cursor: pointer;
+
+
+}
+
+img:hover {
+    transform: scale(1.05);      /* Slight zoom on hover for interactivity */
 }
 
