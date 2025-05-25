@@ -1,0 +1,391 @@
+/* Admin Styles */
+:root{
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Login Page */
+.admin-login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e2c3db 100%);
+}
+
+.admin-login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.admin-login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    border-color: #fbd2ff;
+    outline: none;
+}
+
+.btn {
+    background: #ffbafe;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #000104;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #700057;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Layout */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-logo {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-logo h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.admin-logo p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.admin-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.admin-menu li {
+    margin-bottom: 5px;
+}
+
+.admin-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.admin-menu li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.admin-menu li.active a,
+.admin-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.admin-logout {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.admin-logout a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.admin-logout a i {
+    margin-right: 10px;
+}
+
+.admin-logout a:hover {
+    color: white;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 20px;
+    background: #f8f9fa;
+    overflow-y: auto;
+}
+
+.admin-header {
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Orders Section */
+.admin-orders {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.order-filters {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-filters button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #f1f3f5;
+    color: #666;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.order-filters button.active,
+.order-filters button:hover {
+    background: #54bac7;
+    color: white;
+}
+
+.orders-table {
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.orders-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.orders-table th {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.orders-table td {
+    font-size: 15px;
+    color: #333;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-new {
+    background-color: rgba(23, 162, 184, 0.2);
+    color: #17a2b8;
+}
+
+.status-processing {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+.status-shipped {
+    background-color: rgba(84, 186, 199, 0.2);
+    color: #54bac7;
+}
+
+.status-delivered {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background: rgba(84, 186, 199, 0.1);
+    color: #54bac7;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-edit:hover {
+    background: #54bac7;
+    color: white;
+}
+
+.btn-edit i {
+    margin-right: 5px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#updateStatusForm select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#updateStatusForm button {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .admin-menu li a {
+        padding: 10px 20px;
+    }
+    
+    .modal-content {
+        margin: 20% auto;
+        width: 95%;
+    }
+}

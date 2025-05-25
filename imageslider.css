@@ -1,0 +1,156 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.header {
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+    top: 0; left: 0; right: 0;
+    margin: 2rem auto; /* Adjust margin for spacing */
+    padding: 2.5rem 3%; /* Add padding for better spacing */
+    font-size: 5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #fc26bc; /* Change text color to white for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(255, 14, 14, 0.5); /* Add shadow for depth */
+    position: relative; /* Position relative for pseudo-elements */
+    display: flex; /* Make it fit the content */
+    width: 60%;
+}
+
+
+
+body{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+.container{
+position: relative;
+size: 10%;
+
+
+}
+
+.container .wrapper{
+width: 60vh;
+height: 75vh;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+margin: 5rem auto;
+overflow: hidden;
+
+}
+
+.container .wrapper-holder{
+
+display: grid;
+grid-template-columns: repeat(4,100%);
+height: 100%;
+width: 100%;
+animation: slider 30s ease-in-out infinite alternate;
+
+}
+
+.container #slider-img1{
+background-image: url(1.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img2{
+background-image: url(2.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img3{
+background-image: url(3.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img4{
+background-image: url(4.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img5{
+background-image: url(5.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img6{
+background-image: url(6.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img7{
+background-image: url(7.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img8{
+background-image: url(8.jpg);
+background-position: center;
+background-size: cover;
+}
+.container #slider-img9{
+background-image: url(9.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.container .button-holder .button{
+background-color: white;
+width: 15px;
+height: 15px;
+border-radius: 15px;
+display: inline-block;
+margin: .3rem;
+justify-content: center;
+align-items: center;
+}
+
+.container .button-holder{
+position: absolute;
+bottom: 0%;
+left: 40%;
+
+}
+
+.button:hover{
+box-shadow: 0px 0px 7px 4px rgba(42, 3, 27, 0.1);
+}
+
+@keyframes slider{
+0% {transform: translateX(0%);}
+10% {transform: translateX(-100%);}
+20% {transform: translateX(-100%);}
+30% {transform: translateX(-200%);}
+40% {transform: translateX(-200%);}
+50% {transform: translateX(-200%);}
+60% {transform: translateX(-300%);}
+70% {transform: translateX(-300%);}
+80% {transform: translateX(-300%);}
+90% {transform: translateX(0%);}
+100% {transform: translateX(0%);}
+
+}
+
+
+@media (max-width:991px){
+    .header{
+        font-size: 4rem;
+    }
+    .container .wrapper{
+width: 60vh;
+height: 75vh;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+margin: 5rem auto;
+overflow: hidden;
+
+    }
+    
+}
+
+
