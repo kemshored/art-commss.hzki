@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Comms</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@696&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+   <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const loggedIn = localStorage.getItem('loggedIn');
+  if (loggedIn !== 'true') {
+    alert("Please sign up or log in first.");
+    window.location.href = "signup.html";  // Redirect if NOT logged in
+  }
+});
+</script>
+   
+    <script src="review.js" defer ></script>
+    <script src="signup.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Ligaya<span>.</span></a>
+        <nav class="navbar">
+            <a href="#welcome">Home</a>
+            <a href="#product">Packages</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <a href="sendmessage.html" class="fas fa-paper-plane"></a>
+            <a href="#" class="fas fa-user"></a>
+            <a href="#" class="fas fa-hourglass-half"></a>
+        </div>
+    </header>
+<br> <br> <br> <br> <br> <br> 
+<br> <br> <br> 
+<center>
+    <section id="welcome" aria-label="Welcome and Introduction" >
+        <h1 class="heading"> About Us</h1>
+        <img src="35d8d519-41f4-4408-b84f-2156c69554f1.jpg">
+             <p class="welcome-message" style="color: #fc26bc;">
+                HZKI </p>
+                <p2><i> Welcome to my art commision website!</i></p2>
+                <h4> I am 16 years old, an art student. I am one of Keshi's Enjoyer, Cat Lover,
+                    Academic Achiever. This website was designed for the people who are interested to buy and request commissions from me. I do Digital Arts through the years.  You can reach me through my social medias. 
+                </h4
+
+       
+    </section>
+        </center>
+        <center>
+<section class="product" id="product">
+     <h1 class="heading" ><span> Commission Types </span></a></h1>
+     
+       <!-- Product 1 -->
+       <div class="packages">
+      <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>TYPE SHI</h3>
+        <p class="price">$30</p>
+        <ul>
+          <li>TYPE SHI PL</li>
+          <li>CLOSE UP - 25 GC</li>
+          <li>Halfbody - 35 gc</li>
+          <li>Customized 50-150 gc</li>
+        </ul>
+      </article>
+
+        <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>Semi-Drawing</h3>
+        <p class="price">$30</p>
+        <ul>
+          <li> CLOSE UP ONLY</li>
+          <li> 50-100gc </li>
+        </ul>
+      </article>
+        <article class="package" tabindex="0" aria-label="Basic sketch package">
+        <h3>TYPE SHI</h3>
+        <p class="price">$30</p>
+        <ul>
+          <li>TYPE MEL PL </li>
+          <li> HEADSHOT - 50GC</li>
+        </ul>
+      </article>
+
+    </section>
+
+      </center>
+      <section class="commission-form" id="Commission">
+    <h1 class="heading"><span>Commission Request</span></h1>
+    <form id="commissionForm">
+        <select name="commissionType" required>
+            <option value="">Select Commission Type</option>
+            <option value="headshot">Headshot</option>
+            <option value="fullbody">Full Body</option>
+            <option value="customized"> Customized</option>
+        </select>
+        <textarea name="name" placeholder="name" required></textarea>
+
+        <textarea name="description" placeholder="Describe what you want drawn..." required></textarea>
+        <input type="file" name="references" accept="image/*" multiple>
+        <button type="submit" class="btn">Submit Request</button>
+    </form>
+</section>
+
+<!--portfolio section-->
+
+ <section id="portfolio" aria-label="Portfolio showcase" class="portfolio-section">
+    <h1 class="heading"> Portfolio</h1>
+    <h2 class="portfolio-heading">TYPE SHI</h2>
+    <p class="portfolio-description">PORTRAIT</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <div class="portfolio-images">
+        <img src="1.jpg" alt="Example artwork 1">
+        <img src="3.jpg" alt="Example artwork 3">
+        <img src="4.jpg" alt="Example artwork 4">
+        <img src="5.jpg" alt="Example artwork 5">
+        
+    </div>
+    <br> <br> <br> <br>
+    <h2 class="portfolio-heading"> TYPE SHI</h2>
+    <p class="portfolio-description">Landscape</p>
+    <p class="portfolio-description">
+        Here are some examples of recent work to showcase style and quality.
+    </p>
+    <div class="portfolio-images">
+        <img src="2.jpg" alt="Example artwork 1">
+        <img src="6.jpg" alt="Example artwork 3">
+        
+    </div>
+</section>
+
+
+<!--portfolio Section ends here-->
+<!--review section starts-->
+<section class="review" id="Review">
+    <center>
+    <h1 class="heading"> <span> Customer's review </span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+        <div class="user">
+            <img src="" alt="">
+            <div class="user-info">
+                <h4>baby ko</h4>
+                <span1>happy customer</span1> 
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+        <div class="user">
+            <img src="" alt="">
+            <div class="user-info">
+                <h4>baby ko</h4>
+                <span1>happy customer</span1> 
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+        <div class="user">
+            <img src="" alt="">
+            <div class="user-info">
+                <h4>baby ko</h4>
+                <span1>happy customer</span1> 
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+        </div>
+
+</div>
+    </div>
+    <section class="review" id="Review">
+  <center>
+    <h1 class="heading"><span>Customer's Review</span></h1>
+    <div class="box-container" id="reviewContainer">
+      <div class="box">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+       
+    </div>
+
+    <div class="review-form" aria-label="Write a review form">
+      <h2>Write a Review</h2>
+      <input type="text" id="userName" placeholder="Your Name" aria-label="Your Name" required />
+      <textarea id="userReview" placeholder="Your Review" aria-label="Your Review" required></textarea>
+      <div class="stars" role="radiogroup" aria-label="Star rating">
+        <i class="fas fa-star" data-value="1" tabindex="0" role="radio" aria-checked="false"></i>
+        <i class="fas fa-star" data-value="2" tabindex="0" role="radio" aria-checked="false"></i>
+        <i class="fas fa-star" data-value="3" tabindex="0" role="radio" aria-checked="false"></i>
+        <i class="fas fa-star" data-value="4" tabindex="0" role="radio" aria-checked="false"></i>
+        <i class="fas fa-star" data-value="5" tabindex="0" role="radio" aria-checked="false"></i>
+      </div>
+      <button id="submitReview" aria-label="Submit your review">Submit Review</button>
+      <div id="notification" role="alert" aria-live="polite"></div>
+    </div>
+  </center>
+</section>
+ </section>
+<!--review section ends-->
+<!-- Portfolio -->
+ 
+
+ <!--Portfolio section ends -->
+<!--contact section starts-->
+
+<section class="contact" id="contact">
+    <center>
+    <h1 class="heading"><span>Contact Me:</span> </h1>
+    
+    <div class="image">
+            <img src="hirono.jpg" alt="">
+            <div class="client-info">
+        <h3> Contact Information:</h3>
+        <p> If you have any questions or inquiries, feel free to reach out these links</p>
+        <ul>
+            <li>Email: <a href="mailto:uno.hychiro@gmail.com">uno.hychiro@gmail.com</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/hzki.zns" target="_blank">hzki.zns</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/Ligaya" target="_blank">Ligaya </a></li>
+
+        </ul>
+
+        </div>
+    </div>
+    <section class="payment" id="payment">
+    <h2 class="heading"><span>Mode of Payment:</span></h2>
+    <div class="payment-info">
+        <ul>
+            <li>GCash: <strong> 09624043397 EJD </strong></li>
+        </ul>
+    </div>
+    </section>
+    </center>
+</section>
+<!--contact section ends-->
+ <!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h2>quick links</h2>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">portfolio</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h2>extra links</h2>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+        </div>
+
+        <div class="box">
+            <h2>contact info</h2>
+            <a href="#">instagram</a>
+            <a href="#">facebook</a>
+        
+        <div class="box">
+            <h2>payment</h2>
+            <a href="#">gcash</a>
+          
+           <!--payment pic?--> <img src="moon.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span2>ITMAWD11</span> | <Bold>all rights reserved</Bold></div>
+</section>
+        <!-- Hidden admin link - small dot at the end -->
+        <span class="admin-access" onclick="window.location.href='adminlogin.html'" style="cursor: pointer; margin-left: 10px; opacity: 0.3;"> Ligaya</span>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
