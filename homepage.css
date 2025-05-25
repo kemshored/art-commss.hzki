@@ -792,19 +792,24 @@ body {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+}
 
 .portfolio-images {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2.5rem;
-  margin-top: 2rem auto;
+  width: fit-content; /* Keeps it tight and centered */
 }
+
 .portfolio-images img {
-  width: 100%;  /* Fill the grid cell */
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(255,111,145,0.3);
-  height: auto;
+  display: block;
+  margin: auto; /* Centers within the grid cell */
+  width: 100%; /* Adjusts to fit within its grid cell */
 }
+
 
 .portfolio-images img:hover {
   transform: scale(1.05);
