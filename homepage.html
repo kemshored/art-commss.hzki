@@ -22,9 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
    
     <script src="review.js" defer ></script>
     <script src="signup.js" defer></script>
+      <ion-icon name="logo-facebook"></ion-icon>
+    
+
 </head>
 <body>
-
+  
     <header>
         <input type="checkbox" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </nav>
         <div class="icons">
             <a href="sendmessage.html" class="fas fa-paper-plane"></a>
-            <a href="#" class="fas fa-user"></a>
+            <a href="userprofile.html" class="fas fa-user"></a>
             <a href="#" class="fas fa-hourglass-half"></a>
         </div>
     </header>
@@ -259,23 +262,55 @@ document.addEventListener("DOMContentLoaded", function() {
  <!--Portfolio section ends -->
 <!--contact section starts-->
 
+
+<!--contact section starts-->
 <section class="contact" id="contact">
     <center>
-    <h1 class="heading"><span>Contact Me:</span> </h1>
-    
-    <div class="image">
-            <img src="hirono.jpg" alt="">
-            <div class="client-info">
-        <h3> Contact Information:</h3>
-        <p> If you have any questions or inquiries, feel free to reach out these links</p>
-        <ul>
-            <li>Email: <a href="mailto:uno.hychiro@gmail.com">uno.hychiro@gmail.com</a></li>
-            <li>Instagram: <a href="https://www.instagram.com/hzki.zns" target="_blank">hzki.zns</a></li>
-            <li>Facebook: <a href="https://www.facebook.com/Ligaya" target="_blank">Ligaya </a></li>
-
-        </ul>
-
+        <h1 class="heading"><span>Contact Me:</span></h1>
+        
+                <div class="client-info">
+                    <h3>Contact Information:</h3>
+                    <p>If you have any questions or inquiries, feel free to reach out through these links:</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i> 
+                             <a href="mailto:uno.hychiro@gmail.com">uno.hychiro@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i> 
+                             <a href="https://www.instagram.com/hzki.zns" target="_blank">hzki.zns</a>
+                        </li>
+                        <li>
+                        <i class="fab fa-facebook-f"></i> 
+                         <a href="https://www.facebook.com/Ligaya" target="_blank">Ligaya</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
         </div>
+<style>
+    .contact ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.contact .client-info ul li i.fab.fa-instagram {
+color: #C13584;
+}
+
+.contact .client-info ul li i.fas.fa-envelope {
+  color: #D44638; /* Email red (like Gmail) */
+  margin-right: 8px;
+}
+
+.contact .client-info ul li i.fab.fa-facebook-f {
+  color: #3b5998; /* Facebook blue */
+  margin-right: 8px;
+}
+
+    </style>
+
     </div>
     <section class="payment" id="payment">
     <h2 class="heading"><span>Mode of Payment:</span></h2>
