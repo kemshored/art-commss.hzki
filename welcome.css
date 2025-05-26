@@ -83,36 +83,34 @@ button {
 
 /* Small tablets and large phones */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 60px; /* Reduced font size for smaller screens */
-    }
+    
 
     p {
-        font-size: 10px; /* Slightly larger font size for readability */
-        line-height: 14px; /* Adjust line height */
+        font-size: 10px; 
+        line-height: 14px; 
     }
 
     button {
-        width: 150px; /* Reduced button width */
-        font-size: 11px; /* Smaller font size */
-        padding: 10px 0; /* Reduced padding */
+        width: 150px;
+        font-size: 11px; 
+        padding: 10px 0; 
     }
 
     .card {
-        width: 150px; /* Reduced card width */
-        height: 200px; /* Reduced card height */
+        width: 150px; 
+        height: 200px; 
         flex-wrap: wrap;
     }
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 40px; /* Further reduced font size for mobile */
-    }
+   
 
     p {
-        font-size: 9px; /* Smaller font size for mobile */
+        margin: .1rem;
+        padding: 1rem;
+        font-size: 7px; /* Smaller font size for mobile */
         line-height: 12px; /* Adjust line height */
     }
 
@@ -122,11 +120,8 @@ button {
         padding: 8px 0; /* Reduced padding */
         border-radius: 10px; /* Smaller border radius */
     }
+   
 
-    .card {
-        width: 120px; /* Further reduced card width */
-        height: 180px; /* Further reduced card height */
-    }
 }
 
 /* Button */
@@ -154,22 +149,40 @@ button {
     background: var(--hover-color, pink);
 }
 
-/* Media Queries for responsiveness */
-/* Small tablets and large phones */
-@media (max-width: 768px) {
-    .btn-explore {
-        font-size: 1.4rem;
-        padding: 1rem 3rem;
-    }
-}
-/* Mobile phones */
+
+  
 @media (max-width: 480px) {
-    .btn-explore {
-        font-size: 1.2rem;
-        padding: 0.8rem 2.5rem;
-        width: 100%;
-        border-radius: 3rem;
+    .col{
+
+        display: flex;
+flex-direction: column; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
     }
+    
+    h1 { 
+        font-size: 70px; 
+        text-align: center; 
+        margin-bottom: 1rem; 
+        color: #ffffff; 
+    }
+    
+    p { 
+        font-size: 15px; 
+        line-height: 12px; 
+    }
+    
+    .btn-explore { 
+        margin: .4rem 0; 
+        font-size: 0.rem; 
+        padding: 1rem 2rem; 
+        width: 70%; 
+        border-radius: 3rem; 
+    }
+
+   .grid-container{
+display: none;
+   }
 }
-
-
