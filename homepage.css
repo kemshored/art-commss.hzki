@@ -843,6 +843,51 @@ body {
     padding: 2rem;
 }
 
+/*Credit section */
+
+/* Container styling */
+  .credit-section {
+    padding: 1rem;
+    background-color: #222; /* dark background */
+    color: #eee; /* light text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .creator-name {
+    font-weight: 600;
+    color: #f76d6d; /* accent color */
+  }
+
+  .logout {
+    margin-top: 0.5rem;
+  }
+
+
+  .home-link {
+    display: block;
+    margin-top: 0.3rem;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .home-link:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
 
 
 
